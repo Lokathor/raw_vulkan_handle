@@ -318,6 +318,79 @@ define_non_dispatchable_handle!(
   VkMicromapEXT
 );
 
+//
+// WSI Extensions
+//
+
+define_non_dispatchable_handle!(
+  /// Khronos: [VkDisplayKHR](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkDisplayKHR.html) (non-dispatchable handle)
+  /// * Parent: [VkPhysicalDevice]
+  /// * Object Type Enum: `VK_OBJECT_TYPE_DISPLAY_KHR`
+  VkDisplayKHR
+);
+define_non_dispatchable_handle!(
+  /// Khronos: [VkDisplayModeKHR](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkDisplayModeKHR.html) (non-dispatchable handle)
+  /// * Parent: [VkDisplayKHR]
+  /// * Object Type Enum: `VK_OBJECT_TYPE_DISPLAY_MODE_KHR`
+  VkDisplayModeKHR
+);
+define_non_dispatchable_handle!(
+  /// Khronos: [VkSurfaceKHR](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkSurfaceKHR.html) (non-dispatchable handle)
+  /// * Parent: [VkInstance]
+  /// * Object Type Enum: `VK_OBJECT_TYPE_SURFACE_KHR`
+  VkSurfaceKHR
+);
+define_non_dispatchable_handle!(
+  /// Khronos: [VkSwapchainKHR](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkSwapchainKHR.html) (non-dispatchable handle)
+  /// * Parent: [VkDevice]
+  /// * Object Type Enum: `VK_OBJECT_TYPE_SWAPCHAIN_KHR`
+  VkSwapchainKHR
+);
+define_non_dispatchable_handle!(
+  /// Khronos: [VkDebugReportCallbackEXT](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkDebugReportCallbackEXT.html) (non-dispatchable handle)
+  /// * Parent: [VkInstance]
+  /// * Object Type Enum: `VK_OBJECT_TYPE_DEBUG_REPORT_CALLBACK_EXT`
+  VkDebugReportCallbackEXT
+);
+define_non_dispatchable_handle!(
+  /// Khronos: [VkDebugUtilsMessengerEXT](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkDebugUtilsMessengerEXT.html) (non-dispatchable handle)
+  /// * Parent: [VkInstance]
+  /// * Object Type Enum: `VK_OBJECT_TYPE_DEBUG_UTILS_MESSENGER_EXT`
+  VkDebugUtilsMessengerEXT
+);
+
+//
+// Video extensions
+//
+
+define_non_dispatchable_handle!(
+  /// Khronos: [VkVideoSessionKHR](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkVideoSessionKHR.html) (non-dispatchable handle)
+  /// * Parent: [VkDevice]
+  /// * Object Type Enum: `VK_OBJECT_TYPE_VIDEO_SESSION_KHR`
+  VkVideoSessionKHR
+);
+define_non_dispatchable_handle!(
+  /// Khronos: [VkVideoSessionParametersKHR](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkVideoSessionParametersKHR.html) (non-dispatchable handle)
+  /// * Parent: [VkVideoSessionKHR]
+  /// * Object Type Enum: `VK_OBJECT_TYPE_VIDEO_SESSION_PARAMETERS_KHR`
+  VkVideoSessionParametersKHR
+);
+
+//
+// VK_NV_external_sci_sync2
+//
+
+define_non_dispatchable_handle!(
+  /// Khronos: [VkSemaphoreSciSyncPoolNV](https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VkSemaphoreSciSyncPoolNV.html) (non-dispatchable handle)
+  /// * Parent: [VkDevice]
+  /// * Object Type Enum: `VK_OBJECT_TYPE_SEMAPHORE_SCI_SYNC_POOL_NV`
+  VkSemaphoreSciSyncPoolNV
+);
+
+//
+// Aliases
+//
+
 pub type VkDescriptorUpdateTemplateKHR = VkDescriptorUpdateTemplate;
 pub type VkSamplerYcbcrConversionKHR = VkSamplerYcbcrConversion;
 pub type VkPrivateDataSlotEXT = VkPrivateDataSlot;
